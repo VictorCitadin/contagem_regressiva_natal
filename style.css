@@ -7,7 +7,6 @@
 }
 
 body {
-  background: url(Christmas.mp4) repeat center;
   font: 18px 'Nunito 700', sans-serif;
   min-height: 100vh;
   justify-content: center;
@@ -17,6 +16,7 @@ body {
 }
 
 .time-show {
+  color: white;
   justify-content: center;
   justify-items: center;
   display: flex;
@@ -42,4 +42,56 @@ body {
 
 p {
   margin-left: 15px;
+}
+
+.faltam {
+  position: absolute;
+  top: 240px;
+  font-size: 29px;
+  color: #007d4c;
+}
+
+.para-o-natal {
+  position: absolute;
+  bottom: 400px;
+  font-size: 29px;
+  color: #007d4c;
+}
+
+@media (max-width: 847px) {
+  body {
+    background-color: #7b1221;
+    min-height: 100vh;
+  }
+
+  div.time-show {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 3em 3em 3em 3em;
+  }
+
+  p {
+    margin-left: 12px;
+    box-sizing: border-box;
+  }
+  span {
+    position: relative;
+    margin-left: 65px;
+    box-sizing: border-box;
+  }
+
+  div.escrita {
+    margin-bottom: 0;
+  }
+
+  .faltam {
+    position: absolute;
+    top: 125px;
+  }
+}
+.para-o-natal {
+  position: absolute;
+  bottom: 245px;
 }
